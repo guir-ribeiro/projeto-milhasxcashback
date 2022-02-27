@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(53, 0, 0);
+}
+
+
+
+for{
+    width: 80%;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.219);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form h1{
+    color: white;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+input#botao{
+    width: 75%;
+}
+
+
+div#resultado{
+    background-color: rgb(153, 153, 153);
+    width: 96%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+
+    margin-top: 50px;
+}
