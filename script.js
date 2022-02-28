@@ -1,10 +1,13 @@
 function calcular(){
-    var v = Number((document.querySelector('input#vproduto')).value);
-    var c = Number((document.querySelector('input#pcash')).value);
-    var p = Number((document.querySelector('input#qpontos')).value);
-    var res = document.querySelector('input#botao');
-    var cashback = v * c;
-    var pontos = (v * p / 500) * 20;
+    var v = document.querySelector('input#vproduto');
+    var vn = Number(v.value);
+    var c = document.querySelector('input#pcash');
+    var cn = Number(c.value);
+    var p = document.querySelector('input#qpontos');
+    var pn = Number(p.value);
+    var res = document.querySelector('input#resultado');
+    var cashback = vn * cn;
+    var pontos = (vn * pn / 500) * 20;
 
     if(cashback > pontos){
         res.innerHTML = 'Compensa mais usando cashback';
