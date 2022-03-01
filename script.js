@@ -5,19 +5,19 @@ function calcular(){
     var cn = Number(c.value);
     var p = document.querySelector('input#qpontos');
     var pn = Number(p.value);
-    var res = document.querySelector('input#resultado');
+    var res = document.querySelector('div#resultado');
     var cashback = vn * (cn/100);
     var pontos = (vn * pn / 500) * 20;
 
     if(cashback > pontos){
-        res.innerHTML = 'Compensa mais usando cashback';
+        res.innerHTML = 'Compensa mais usando cashback!';
         res.innerHTML += `<p> O valor em cashback seria ${cashback}  </p>`
-        res.innerHTML += `<p> O valor em milhas seria ${pontos} (Levando em conta que seria realizado a transfência com 100% de bonificação e calculando o milheiro a 20 reais)</p>`
+        res.innerHTML += `<p> O valor em milhas seria ${pontos} (Levando em conta que seria realizado a transfência com 100% de bonificação e calculando o milheiro a R$ 20,00 reais)</p>`
     }
 
     else{
-        res.innerHTML = 'Compensa mais através dos pontos';
-        res.innerHTML += `<p> O valor em cashback seria ${cashback}  </p>`
-        res.innerHTML += `<p> O valor em milhas seria ${pontos} (Levando em conta que seria realizado a transfência com 100% de bonificação e calculando o milheiro a 20 reais)</p>`
+        res.innerHTML = 'Compensa mais através dos pontos!';
+        res.innerHTML += `<p> O valor em cashback seria R$ ${cashback}.  </p>`
+        res.innerHTML += `<p> O valor em milhas seria R$ ${pontos} (Levando em conta que seria realizado a transfência com 100% de bonificação e calculando o milheiro a R$ 20,00 reais)</p>`
     }
 }
