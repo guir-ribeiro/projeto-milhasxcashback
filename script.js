@@ -6,7 +6,7 @@ function calcular(){
     var p = document.querySelector('input#qpontos');
     var pn = Number(p.value);
     var res = document.querySelector('input#resultado');
-    var cashback = vn * cn;
+    var cashback = vn * (cn/100);
     var pontos = (vn * pn / 500) * 20;
 
     if(cashback > pontos){
