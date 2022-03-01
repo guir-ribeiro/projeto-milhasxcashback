@@ -37,7 +37,6 @@ input{
     border-radius: 10px;
 }
 
-
 input#botao:hover{
     background-color: rgb(53, 0, 0);
     color: white;
