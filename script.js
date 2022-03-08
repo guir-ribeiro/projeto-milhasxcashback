@@ -11,13 +11,15 @@ function calcular(){
 
     if(cashback > pontos){
         res.innerHTML = 'Compensa mais usando cashback!';
-        res.innerHTML += `<p> O valor em cashback seria ${cashback}  </p>`
-        res.innerHTML += `<p> O valor em milhas seria ${pontos} (Levando em conta que seria realizado a transfência com 100% de bonificação e calculando o milheiro a R$ 20,00 reais)</p>`
+        res.innerHTML += `<p> O valor em cashback seria ${cashback},00.  </p>`
+        res.innerHTML += `<p> O valor em milhas seria ${pontos},00. `
+        res.innerHTML += `(Levando em conta que seria realizado a transferência com 100% de bonificação e calculando o milheiro a R$ 20,00 reais)</p>`
     }
 
     else{
         res.innerHTML = 'Compensa mais através dos pontos!';
-        res.innerHTML += `<p> O valor em cashback seria R$ ${cashback}.  </p>`
-        res.innerHTML += `<p> O valor em milhas seria R$ ${pontos} (Levando em conta que seria realizado a transfência com 100% de bonificação e calculando o milheiro a R$ 20,00 reais)</p>`
+        res.innerHTML += `<p> O valor em cashback seria R$ ${cashback},00.  </p>`
+        res.innerHTML += `<p> O valor em milhas seria R$ ${pontos},00.` 
+        res.innerHTML += `(Levando em conta que seria realizado a transferência com 100% de bonificação e calculando o milheiro a R$ 20,00 reais)</p>`
     }
-}
+} 
