@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0px;
 }
 
 body{
@@ -37,11 +38,11 @@ input{
     border-radius: 10px;
 }
 
+
 input#botao:hover{
     background-color: rgb(53, 0, 0);
     color: white;
-    box-shadow: 1px 1px 10px rgb(60, 0, 0);
-    border: none;
+    box-shadow: 1px 1px 20px rgb(60, 0, 0);
 }
 
 input#botao:active{
