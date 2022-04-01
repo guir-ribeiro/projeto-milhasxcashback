@@ -68,3 +68,24 @@ div#resultado{
     padding: 12px;
     text-align: center;
 }
+
+@media screen and (max-width: 800px) {
+   
+    #for{
+        width: 70%;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    form h1{
+        color: white;
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    form h1{
+        color: white;
+        font-size: 22px;
+    }
+}
